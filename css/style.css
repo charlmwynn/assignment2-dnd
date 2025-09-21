@@ -31,7 +31,12 @@ h1 {
 #class-box {
     display: flex;
     gap: 20px;
+    font-size: 16 pt;
+    
 }
 #caption, #table {
     flex: 1
+}
+* {
+    background-color: rgb(243, 198, 191)
 }
