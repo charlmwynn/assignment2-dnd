@@ -37,3 +37,15 @@ h1 {
 #caption, #table {
     flex: 1
 }
+@media (max-width: 600 px) {
+    body {
+        font-size: 12px;
+    }
+    img {
+        max-width: 200 px;
+    }
+    .class-box {
+        flex-direction: column;
+        align-items: center;
+    }
+}
