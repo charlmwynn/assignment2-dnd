@@ -37,7 +37,7 @@ h1 {
 #caption, #table {
     flex: 1
 }
-@media (max-width: 600 px) {
+@media (max-width: 600px) {
     body {
         font-size: 12px;
     }
