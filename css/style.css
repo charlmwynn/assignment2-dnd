@@ -41,11 +41,9 @@ h1 {
     body {
         font-size: 12px;
     }
-    #table {
-        max-width: 200px;
-    }
     #class-box {
         flex-direction: column;
         align-items: center;
+        width: 200px;
     }
 }
