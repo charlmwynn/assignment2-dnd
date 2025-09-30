@@ -19,7 +19,8 @@ h1 {
 .btn-primary {
     --bs-btn-hover-color: white;
     --bs-btn-hover-bg: rgb(70, 70, 70);
-}
+    padding: 10px;
+}s
 #class-box {
     display: flex;
     gap: 20px;
@@ -33,17 +34,20 @@ h1 {
     body {
         font-size: 12pt;
     }
-    #class-box {
-        flex-direction: column;
-        align-items: center; /* not sure whether this is actually doing anything with the other styling on the page */
-        width: 100%;
-    }
-    #caption {
+    .class-info clearfix {
         width: 100%;
         height: auto;
     }
-    #table img {
+    .class-info clearfix img {
         width: 100%;    
         height: auto;   
     } /* finally figured out how to get the image to shrink and grow with the container! */
 }
+.class-info clearfix {
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+}
+#footer {
+    align-items: right;
+} /* this doesn't seem to be working and I can't figure out why. Trying to right-align the button on the page */
