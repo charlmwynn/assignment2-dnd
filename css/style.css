@@ -16,17 +16,9 @@ h1 {
   border: 1px solid black; 
   padding: 10px;
 }
-.button {
-    background-color: #5a0808;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    font-family: sans-serif;
-    font-weight: bold;
-    display: inline-block;
-    margin: 10px;
+.btn-primary {
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: rgb(70, 70, 70);
 }
 #class-box {
     display: flex;
