@@ -8,6 +8,8 @@ h1 {
     font-weight: bold;
     background-color: black;
     color: white;
+    padding: 10px;
+    padding-left: 30px;
 }
 #roles-to-fill {
   display: flex;
@@ -19,41 +21,29 @@ h1 {
 .btn-primary {
     --bs-btn-hover-color: white;
     --bs-btn-hover-bg: rgb(70, 70, 70);
-    padding: 10px;
-}s
-#class-box {
-    display: flex;
-    gap: 20px;
-    font-size: 16px;
-}
-#caption, #table {
-    flex: 1
+    padding-top: 10px;
 }
 @media (max-width: 800px) {
     body {
         font-size: 12pt;
     }
-    .class-info clearfix {
+    .clearfix {
         width: 100%;
         height: auto;
     }
-    .class-info clearfix img {
+    .clearfix img {
         width: 100%;    
         height: auto;   
-    } /* finally figured out how to get the image to shrink and grow with the container! */
+    } 
 }
-.class-info {
-    align-items: center;
+.clearfix {
     text-align: left;
-    padding: 20px;
-    max-width: 1000px;
-}
-#footer {
-    align-items: right;
-} /* this doesn't seem to be working and I can't figure out why. Trying to right-align the button on the page */
+    padding: 10px;
+    max-width: 1250px;
+} /* this clearfix container didn't really do what I was looking for it to do. I was hoping to emulate the floating image with wrapped text from the Columns Bootstrap documentation, but it doesn't look like it worked. I made do, but I would like to know what I did wrong. */
 body {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
     padding-bottom: 30px;
-    max-width: 1500px
-}
+    max-width: 1500px;
+    align-items: center;
+} /* it seems like I might be misunderstanding how alignment works in css. with this code I was trying to get the whole site to appear centered within the window, but it didn't do anything that I can see. */
